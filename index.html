@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <h2>Tic Tac Toe</h2>
+  <h1 id="timer"></h1>
+  <h2 id="title">Tic Tac Toe</h2>
   <div class="board">
     <div id="row-1">
       <div id="cell-0"></div>
@@ -29,9 +30,24 @@
     </div>
   </div>
 
-  <div class="status">
-    <button id="start" type="button">Start Game</button>
+
+
+  <div>
+
+    <div id="status">
+      <p id="status-area">
+
+      </p>
+      <button id="one-player" type="button">1 Player</button>
+      <button id="start" type="button">2 Player</button>
+      <input name="xname" id="xnameid" type="text" placeholder="Enter Name for Player X..."></input>
+      <input name="oname" id="onameid" type="text" placeholder="Enter Name for Player O..."></input>
+      <button id="add-names">Submit Names & Start Game</button>
+      </br>
+      
+    </div>
   </div>
+
   <script src="main.js"></script>
 </body>
 

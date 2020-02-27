@@ -37,6 +37,11 @@ describe("Tic Tac Toe", () => {
     it('the status area should say whose turn it is', ()=>{
       cy.get('.status').contains("Player X's turn")
     })
+
+    it('draws an x in cell-0', function() {
+      cy.get('div#cell-0').click()
+      cy.get('div#cell-0').contains('x')
+    })
   })
 
 })
